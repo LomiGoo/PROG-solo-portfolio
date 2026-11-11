@@ -1,0 +1,9 @@
+.portfolio-button {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.portfolio-button:active {
+    transform: scale(0.98);
+}
+
+

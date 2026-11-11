@@ -4,8 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-PORTFOLIO</title>
+    <link rel="icon" href="media/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <span class="navbar-brand">E-Portfolio</span>
+
+            <ul class="navbar-links">
+                <li><a class="active" href="#home" data-nav-home>Home</a></li>
+                <li><a href="#about" data-nav-about>About Me</a></li>
+                <li><a href="#works" data-nav-works>Works</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-section" id="home">
+            <div class="home-content">
+                <h1>Welcome to My E-Portfolio</h1>
+                <p>This website serves as a collection of my academic works, achievements, and experiences from my Senior High School at Rizal High School throughout my journey as a Bachelor of Science in Information Technology student at Jose Rizal University.</p>
+                <button class="portfolio-button" type="button" data-show-about><span class="button-label">Explore My Portfolio</span><span aria-hidden="true">&#8594;</span></button>
+            </div>
+        </section>
+
+        <section class="about-section" id="about" aria-hidden="true">
+            <div class="about-layout">
+                <div class="photo-card">
+                    <img src="media/images/photos/chib.png" alt="Illustration of Chib">
+                    <p class="photo-caption">
+                        <span class="photo-name">CHEVELLE S. NACIONALES</span><br>
+                        <span>Jose Rizal University</span><br>
+                        <span>BS Information Technology</span>
+                    </p>
+                </div>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h2>Who Am I?</h2>
+                        <p>I am <strong>Chevelle S. Nacionales</strong>, an 18-year-old student with a passion for gaming and technology. My interest in technology has also led me to develop a passion for programming, particularly in creating websites, games, and other digital projects.</p>
+                    </div>
+                    <div class="about-card">
+                        <h2>Educational Background</h2>
+                        <div class="education-gallery">
+                            <figure>
+                                <img src="media/images/photos/sanMiguel.png" alt="San Miguel Elementary School">
+                                <figcaption>2013–2020</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/images/photos/sagadHigh.png" alt="Sagad High School">
+                                <figcaption>2020–2024</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/images/photos/rizalHgih.png" alt="Rizal High School">
+                                <figcaption>2024&#8211;2026<br>TVL - ICT Programming</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/images/photos/jru.png" alt="Jose Rizal University">
+                                <figcaption>2026&#8211;current<br>BS Information Technology</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <h2>Goals and Inspiration</h2>
+                        <p>My goal is to become a web developer and eventually explore game development, where I can turn my ideas into real projects. I also aspire to become a freelancer, allowing me to work on different projects, gain experience, and earn through my programming skills. My biggest inspiration comes from programmer content creators on social media, whose projects and coding journeys motivated me to learn programming and pursue a career in technology. I hope to follow a similar path and become a skilled developer someday.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works-section" id="works" aria-hidden="true">
+            <div class="works-heading">
+                <h2>Academics &amp; Relevant Works</h2>
+            </div>
+            <div class="works-content">
+                <h2>Computer Programming 1 Compilation</h2>
+                <p>All PTs, machine problems, activities, seatworks, and other outputs.</p>
+                <a class="portfolio-button pdf-button" href="files/CompiledActivity.pdf" target="_blank" rel="noopener">
+                    <span class="button-label">View PDF</span>
+                    <svg class="eye-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"></path>
+                        <circle cx="12" cy="12" r="2.5"></circle>
+                    </svg>
+                </a>
+            </div>
+            <div class="experience-content">
+                <h2>Work Experience</h2>
+                <p class="experience-description">As a Senior High School student at Rizal High School, I completed a 420hrs work immersion program at Jenny's Avenue Extension, Barangay Maybunga, Pasig City, Philippines, as part of the first batch of students assigned to the location. I was assigned to the school's office, where I helped manage, encode, and organize student files and records using Microsoft Excel. Throughout the immersion, I learned how to properly handle documents, maintain organized records, and ensure accuracy when managing student information. This experience also helped me develop practical skills in office work, teamwork, time management, and responsibility while giving me a glimpse of how a real working environment operates.</p>
+            </div>
+        </section>
+
+        <section class="experience-page" id="experience" aria-hidden="true">
+            <h1 class="experience-page-title">GALLERY OF WORK IMMERSION &amp; RECOGNITION</h1>
+            <div class="page-carousel" aria-label="Work experience carousel">
+                <div class="page-carousel-track">
+                    <div class="page-carousel-set">
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/respsci.png" alt="Respsci logo">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im1.png" alt="Work experience photo 1">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im2.png" alt="Work experience photo 2">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im3.png" alt="Work experience photo 3">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im4.png" alt="Work experience photo 4">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im5.png" alt="Work experience photo 5">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im6.png" alt="Work experience photo 6">
+                        </article>
+                        <article class="page-carousel-card">
+                            <img src="media/images/photos/im7.png" alt="Work experience photo 7">
+                        </article>
+                    </div>
+                </div>
+                <div class="award-content">
+                    <img src="media/images/photos/award.jpg" alt="Work immersion completion award">
+                    <p>We developed a <strong>Sales and Records Management System</strong> for an eatery using Java, JavaFX, and SQLite. The system aimed to simplify sales tracking, manage customer orders, and organize business records. Although we were unable to finish the system and deliver it to the intended eatery, our project was still recognized among the works of other students. It became a valuable learning experience that strengthened our programming, database management, and teamwork skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reflection-page" id="reflection" aria-hidden="true">
+            <h1 class="reflection-title">Reflection</h1>
+            <article class="reflection-card">
+                <h2>Prelim Term</h2>
+                <p>During the preliminary term of Computer Programming 1, I learned about flowcharts, pseudocode, and logic formulation. These topics helped me develop a better understanding of how to organize steps and plan solutions before writing a program. I found these lessons manageable and enjoyed learning how to translate problems into logical steps.</p>
+            </article>
+            <article class="reflection-card">
+                <h2>Midterm Term</h2>
+                <p>During the midterm term, we were introduced to Java and its basic concepts. I learned how to write simple programs, use print statements, understand basic syntax, and apply conditional statements such as <code>if</code> and <code>else</code>. I was able to follow the lessons comfortably and enjoyed applying what I learned through coding activities and exercises.</p>
+            </article>
+            <article class="reflection-card">
+                <h2>Final Term</h2>
+                <p>During the final term, we focused on loops and more challenging programming activities. I learned how to use looping statements to repeat instructions and solve more complex problems. Compared to the previous terms, the activities required more logical thinking and careful planning. These lessons helped me improve my problem-solving skills and become more confident in writing Java programs.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+        <div class="footer-links">
+            <a href="https://github.com/LomiGoo" target="_blank" rel="noopener">
+                <img src="media/images/icons/github.png" alt="GitHub">
+                <span>Profile | LomiGoo</span>
+            </a>
+            <a href="https://www.facebook.com/chevelle.nacionales.9" target="_blank" rel="noopener">
+                <img src="media/images/icons/facebook.png" alt="Facebook">
+                <span>Profile | Chevelle Nacionales</span>
+            </a>
+        </div>
+        <span>&copy; <span id="current-year"></span> ePortfolio</span>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
