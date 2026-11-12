@@ -347,7 +347,7 @@ main > section,
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 0;
+    gap: 24px;
     width: 90%;
     margin-top: 24px;
     transform: translateX(7%);
@@ -363,7 +363,6 @@ main > section,
 .award-content p {
     width: 40%;
     margin: 0;
-    margin-left: -10%;
     padding: 32px;
     color: #000;
     background: #fff;
@@ -399,7 +398,7 @@ main > section,
 }
 
 .reflection-card {
-    width: 35%;
+    width: 45%;
     padding: 18px 22px;
     color: #000;
     background: #fff;
