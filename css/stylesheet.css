@@ -9,6 +9,8 @@ html {
 
 :root {
     --header-height: 72px;
+    --frame-width: 1600px;
+    --frame-height: 900px;
 }
 
 @font-face {
@@ -71,6 +73,17 @@ body {
     overflow-y: auto;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+}
+
+@media (min-width: 701px) {
+    .site-header,
+    main,
+    .site-footer {
+        width: min(100%, var(--frame-width));
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 }
 
 main > section,
@@ -146,8 +159,8 @@ main > section,
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: calc(100dvh - var(--header-height));
-    min-height: calc(100dvh - var(--header-height));
+    height: calc(var(--frame-height) - var(--header-height));
+    min-height: calc(var(--frame-height) - var(--header-height));
     padding: 20px 0;
     padding: 80px 8%;
     background: url("../media/images/backgrounds/01-home.png") center / cover no-repeat;
@@ -232,8 +245,8 @@ main > section,
 .about-section {
     display: none;
     align-items: center;
-    height: calc(100dvh - var(--header-height));
-    min-height: calc(100dvh - var(--header-height));
+    height: calc(var(--frame-height) - var(--header-height));
+    min-height: calc(var(--frame-height) - var(--header-height));
     padding: 32px 5%;
     color: #fff;
     background: url("../media/images/backgrounds/02-about.png") center / cover no-repeat;
@@ -248,8 +261,8 @@ main > section,
     column-gap: 5%;
     row-gap: 0;
     width: 100%;
-    height: calc(100dvh - var(--header-height));
-    min-height: calc(100dvh - var(--header-height));
+    height: calc(var(--frame-height) - var(--header-height));
+    min-height: calc(var(--frame-height) - var(--header-height));
     padding: 8% 2% 0;
     flex-shrink: 0;
     background: url("../media/images/backgrounds/03-works.png") center / cover no-repeat;
@@ -266,8 +279,8 @@ main > section,
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: calc(100dvh - var(--header-height));
-    min-height: calc(100dvh - var(--header-height));
+    height: calc(var(--frame-height) - var(--header-height));
+    min-height: calc(var(--frame-height) - var(--header-height));
     padding: 20px 0;
     overflow: hidden;
     scroll-margin-top: 72px;
@@ -377,8 +390,8 @@ main > section,
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    height: calc(100dvh - var(--header-height));
-    min-height: calc(100dvh - var(--header-height));
+    height: calc(var(--frame-height) - var(--header-height));
+    min-height: calc(var(--frame-height) - var(--header-height));
     padding: 40px 8% 40px 8%;
     overflow: hidden;
     background: url("../media/images/backgrounds/04-reflection.png") center / cover no-repeat;
@@ -441,24 +454,27 @@ p strong {
 
 .works-content {
     align-self: flex-start;
-    width: min(34%, 420px);
+    width: 40%;
     margin-left: auto;
+    margin-right: 0;
     padding-top: 0;
+    padding-right: 32px;
+    padding-left: 32px;
     color: #fff;
     text-align: center;
-    transform: translate(-155px, -20px);
+    transform: translateY(-40px);
 }
 
 .works-heading {
     width: min(42%, 520px);
     color: #fff;
     text-align: center;
-    transform: translate(-30px, 100px);
+    transform: translate(-60px, 140px);
 }
 
 .works-heading h2 {
     margin: 0;
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(1.7rem, 3vw, 3rem);
     line-height: 1.1;
 }
 
@@ -668,6 +684,17 @@ p strong {
     object-fit: contain;
 }
 
+@media (min-width: 701px) {
+    .home-section,
+    .about-section,
+    .works-section,
+    .experience-page,
+    .reflection-page {
+        height: min(calc(100dvh - var(--header-height)), calc(100vw * 0.5625 - var(--header-height)));
+        min-height: min(calc(100dvh - var(--header-height)), calc(100vw * 0.5625 - var(--header-height)));
+    }
+}
+
 @media (min-width: 701px) and (max-height: 800px) {
     .home-section {
         padding: 40px 6%;
@@ -734,6 +761,42 @@ p strong {
     .reflection-card p {
         font-size: clamp(0.9rem, 1.8vw, 1.1rem);
         line-height: 1.35;
+    }
+}
+
+@media (min-width: 701px) {
+    .about-layout,
+    .works-heading,
+    .works-content,
+    .reflection-title,
+    .reflection-card {
+        zoom: 0.82;
+    }
+}
+
+@media (min-width: 1201px) {
+    .about-layout,
+    .works-heading,
+    .works-content,
+    .reflection-title,
+    .reflection-card {
+        zoom: 0.9;
+    }
+}
+
+@media (min-width: 1601px) {
+    .about-layout,
+    .works-heading,
+    .works-content,
+    .reflection-title,
+    .reflection-card {
+        zoom: 1;
+    }
+}
+
+@media (min-width: 701px) {
+    .about-card {
+        zoom: 1.15;
     }
 }
 
